@@ -18,19 +18,15 @@ public class NabeatsuController {
                     || String.valueOf(number).contains("3");
 
             String message = special
-                    ? "ハローナベアツ！"
-                    : "こんにちは";
+                    ? "オモロ～ワールド～！"
+                    : "Hello World!";
 
-            results.add(new NabeatsuResult(number, special, message));
+            results.add(new NabeatsuResult(number, message));
         }
 
         return results;
     }
 
-    public record NabeatsuResult(
-            int number,
-            boolean special,
-            String message
-    ) {
+    public record NabeatsuResult(int number, String message) {
     }
 }
