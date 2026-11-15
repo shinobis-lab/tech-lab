@@ -1,0 +1,16 @@
+{
+  "name": "Spring Boot (Java 21)",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "workspaceFolder": "/workspaces/tech-lab/backend",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/tech-lab/backend,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-spring-boot",
+        "vscjava.vscode-spring-initializr"
+      ]
+    }
+  },
+  "forwardPorts": [8080]
+}
